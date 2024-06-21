@@ -18,8 +18,7 @@ function fights(actions) {
                     isMagic = false;
                     break;
                 }
-            }
-            else if (action === '!') {
+            } else if (action === '!') {
                 if (lifoStack[lifoStack.length - 1] === '!') {
                     lifoStack.pop();
                 } else {
