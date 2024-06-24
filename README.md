@@ -1,4 +1,4 @@
 
 # Front-End with JavaScript 
 
-https://DemianVassilev.github.io/SirmaAcademy/
+https://DemianVassilev.github.io/SirmaAcademy
