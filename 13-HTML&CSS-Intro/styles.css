@@ -16,6 +16,12 @@ header {
   text-align: center;
 }
 
+.header-decoration {
+  text-decoration: none;
+  color: white;
+}
+
+
 main {
   flex: 1;
   padding-top: 10px;
