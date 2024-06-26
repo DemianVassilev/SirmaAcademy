@@ -1,0 +1,29 @@
+#paragraph-1 {
+  color: red;
+  font-weight: 700;
+  font-size: smaller;
+}
+
+#paragraph-2 {
+  color: darkred;
+  font-weight: 800;
+  font-size: medium;
+}
+
+#paragraph-3 {
+  color: darkolivegreen;
+  font-weight: 900;
+  font-size: large;
+}
+
+#paragraph-4 {
+  color: darkgreen;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#paragraph-5 {
+  color: darkcyan;
+  font-weight: bolder;
+  font-size: x-large;
+}
