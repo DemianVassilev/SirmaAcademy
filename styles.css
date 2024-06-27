@@ -48,6 +48,20 @@ div#main {
   padding-right: 25px;
 }
 
+nav button {
+  cursor: pointer;
+  padding: 9px;
+  margin-top: 13px;
+  margin-bottom: 23px;
+  font-family: 'Segoe UI Light', Tahoma, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+nav button:hover {
+  /* text-decoration: underline; */
+  color: darkmagenta;
+}
+
 section {
   display: none;
 }
