@@ -10,50 +10,50 @@
 
   <body>
     <header>
-      <h1><a href="../index.html" class="header-decoration">HTML & CSS – Exercises</a></h1>
+      <h1 id="header"><a href="../index.html#section1" section.active>HTML & CSS – Exercises</a></h1>
     </header>
 
     <main>
-      <div>
+      <div id="main">
         <h1>Block Elements</h1>
         <nav>
           <h3><a href="./forms.html">HTML Forms</a></h3>
         </nav>
         <br>
         <form action="#" method="POST">
-          <section>
+          <div>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-          </section>
+          </div>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <section>
+          <div>
             <label for="email">Email:&nbsp;</label>
             <input type="email" id="email" name="email" required>
-          </section>
+          </div>
           <br><br>
-          <section>
+          <div>
             <label>Interests:</label>
             <br><br>
-            <section>
+            <div>
               <input type="checkbox" id="interest1" name="interests" value="coding">
               <label for="interest1">Programming</label>
-            </section>
+            </div>
             &nbsp;&nbsp;
-            <section>
+            <div>
               <input type="checkbox" id="interest2" name="interests" value="security">
               <label for="interest2">Cybersecurity</label>
-            </section>
+            </div>
             &nbsp;&nbsp;
-            <section>
+            <div>
               <input type="checkbox" id="interest3" name="interests" value="driving">
               <label for="interest3">Driving</label>
-            </section>
+            </div>
             &nbsp;&nbsp;
-            <section>
+            <div>
               <input type="checkbox" id="interest4" name="interests" value="music">
               <label for="interest4">Music</label>
-            </section>
-          </section>
+            </div>
+          </div>
           <br><br><br>
           <button type="submit">Submit</button>
         </form>
@@ -62,7 +62,7 @@
     </main>
 
     <footer>
-      <p>&copy;&nbsp; Sirma Academy &nbsp; 2024
+      <p id="footer">&copy;&nbsp; Sirma Academy &nbsp; 2024</p>
     </footer>
   </body>
 
