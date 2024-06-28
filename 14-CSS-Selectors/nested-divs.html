@@ -4,13 +4,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Percentage Width Exercise</title>
+    <title>Nested Divs Exercise</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-      .percentage-width {
+      .parent {
         margin-top: 70px;
         margin-left: auto;
         margin-right: auto;
+        border: 1px solid red;
+        background-color: darkturquoise;
+        padding: 20px;
+        width: 50%;
+      }
+
+      .child {
         border: 2px solid red;
         background-color: darkcyan;
         text-align: center;
@@ -29,7 +36,9 @@
 
     <main>
       <!-- <div id="main"> -->
-      <div class="percentage-width">Resize the window to see me change!</div>
+      <div class="parent">
+        <div class="child">I'm 50% of my parent.</div>
+      </div>
       <!-- </div> -->
     </main>
 
