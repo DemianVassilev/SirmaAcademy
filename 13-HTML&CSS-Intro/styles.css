@@ -81,3 +81,13 @@ p#footer {
   text-align: center;
   font-weight: 300;
 }
+
+p#footer a {
+  text-decoration: none;
+  color: white;
+}
+
+p#footer a:hover {
+  text-decoration: underline;
+  color: rgb(65, 207, 253);
+}
