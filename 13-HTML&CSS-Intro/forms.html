@@ -18,26 +18,34 @@
         <h1>Forms</h1>
         <br>
         <form action="#" method="POST">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <label for="name">First Name:</label><br>
+          <input type="text" id="fname" name="fname" value="Дамян" required>
           <br><br>
-          <label>Interests:</label>
-          &nbsp;&nbsp;
-          <input type="checkbox" id="interest1" name="interests" value="coding">
+          <label for="name">Last Name:</label><br>
+          <input type="text" id="lname" name="lname" value="Василев" required>
+          <br><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" value="demian.vassilev@gmail.com" required>
+          <br><br>
+          <label for="phone">Phone:</label><br>
+          <input type="tel" id="phone" name="phone" value="0878 702770" required>
+          <br><br>
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" required value="123456">
+          <br><br>
+          <p>Interests:</p>
+          <input type="checkbox" checked id="interest1" name="interests" value="coding">
           <label for="interest1">Programming</label>
-          &nbsp;&nbsp;
-          <input type="checkbox" id="interest2" name="interests" value="security">
+          <br>
+          <input type="checkbox" checked id="interest2" name="interests" value="security">
           <label for="interest2">Cybersecurity</label>
-          &nbsp;&nbsp;
-          <input type="checkbox" id="interest3" name="interests" value="driving">
+          <br>
+          <input type="checkbox" checked id="interest3" name="interests" value="driving">
           <label for="interest3">Driving</label>
-          &nbsp;&nbsp;
-          <input type="checkbox" id="interest4" name="interests" value="music">
+          <br>
+          <input type="checkbox" checked id="interest4" name="interests" value="music">
           <label for="interest4">Music</label>
-          <br><br><br>
+          <br><br><br><br>
           <button type="submit">Submit</button>
         </form>
         <br>
