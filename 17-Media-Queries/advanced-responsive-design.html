@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Responsive Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      nav {
+        background-color: #142344;
+        padding: 10px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: 19px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .section {
+        background-color: rgb(242, 245, 250);
+        padding: 20px;
+        border: 1px solid rgb(65, 207, 253);
+        flex: 1 1 100%;
+        text-align: center;
+      }
+
+      @media (min-width: 600px) and (max-width: 899px) {
+        nav {
+          display: none;
+        }
+
+        .container {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .section {
+          flex: 1 1 100%;
+        }
+      }
+
+      @media (min-width: 900px) and (max-width: 1399px) {
+        nav {
+          display: grid;
+          grid-template-columns: repeat(2, 100px);
+          position: fixed;
+          grid-auto-rows: 70px;
+          /* top: 0; */
+          /* bottom: 0; */
+          min-height: 88vh;
+        }
+
+        .container {
+          margin-left: 220px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .section {
+          flex: none;
+        }
+      }
+
+      @media (min-width: 1400px) {
+        nav {
+          display: flex;
+          justify-content: center;
+        }
+
+        nav a {
+          display: inline-block;
+          padding: 10px 20px;
+        }
+
+        .container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .section {
+          flex: none;
+        }
+      }
+
+      @media (max-width: 599px) {
+        nav {
+          display: none;
+        }
+
+        .container {
+          display: flex;
+          flex-direction: row;
+          padding: 10px;
+        }
+
+        .section {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="header"><a href="../index.html#section3" section.active>Advanced Responsive Design</a></h1>
+    </header>
+
+    <div class="content">
+      <nav>
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+        <a href="#section4">Section 4</a>
+      </nav>
+
+      <div class="container">
+        <div id="section1" class="section">Section 1</div>
+        <div id="section2" class="section">Section 2</div>
+        <div id="section3" class="section">Section 3</div>
+        <div id="section4" class="section">Section 4</div>
+      </div>
+    </div>
+
+    <footer>
+      <p id="footer">&copy;&nbsp;
+        <a href="https://careers.sirma.com/sirmaacademy.html" target="_blank">Sirma Academy &nbsp; 2024</a>
+      </p>
+    </footer>
+  </body>
+
+</html>
