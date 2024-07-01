@@ -4,20 +4,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Width Exercise</title>
+    <title>Specificity Exercise</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-      .fixed-width {
-        margin-top: 70px;
-        margin-bottom: 70px;
-        border: 1px solid red;
-        background-color: darkturquoise;
-        padding: 10px;
-        text-align: left;
+      p {
+        font-style: italic;
+        font-size: 16px;
+        font-weight: 400;
+        color: blue;
+        /* Style for type selector */
+      }
+
+      .highlight {
+        font-style: bold;
         font-size: 24px;
-        color: white;
-        width: 300px;
-        /* Set width to 300px */
+        font-weight: 700;
+        color: red;
+        /* Style for class selector */
       }
     </style>
   </head>
@@ -28,9 +31,11 @@
     </header>
 
     <main>
+      <!-- <div class="content"> -->
       <div id="main">
-        <h1>Pixel Width</h1>
-        <div class="fixed-width">I have a fixed width of 300px.</div>
+        <h1>Specificity</h1>
+        <p class="highlight">This is a paragraph.</p>
+        <!-- <p>This is a paragraph.</p> -->
       </div>
     </main>
 
