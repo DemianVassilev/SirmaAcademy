@@ -4,10 +4,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specificity Exercise</title>
+    <title>ID Selector Exercise</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-      #unique {
+      #unique-element {
         color: blue;
         font-weight: 700;
         font-style: italic;
@@ -22,6 +22,14 @@
         font-size: 16px;
         /* Style for class selector */
       }
+
+      p {
+        color: blue;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 16px;
+        /* Style for type selector */
+      }
     </style>
   </head>
 
@@ -33,10 +41,13 @@
     <main>
       <!-- <div class="content"> -->
       <div id="main">
-        <h1>Specificity</h1>
-        <p id="unique" class="highlight">This is a paragraph.</p>
-        <!-- <p id="unique">This is a paragraph.</p> -->
-        <!-- <p class="highlight">This is a paragraph.</p> -->
+        <h1>ID Selector</h1>
+        <div id="unique-element">Unique Element</div>
+        <br>
+        <div>Element</div>
+        <!-- <br>
+        <div class="highlight">Class selector</div>
+        <p>Type selector</p> -->
       </div>
     </main>
 
