@@ -55,9 +55,9 @@ div#main {
 
 nav button {
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 3px;
   border: 1px solid #203260;
-  padding: 2px;
+  padding: 3px;
   margin-top: 13px;
   margin-bottom: 23px;
   font-family: 'Segoe UI Light', Tahoma, Verdana, sans-serif;
