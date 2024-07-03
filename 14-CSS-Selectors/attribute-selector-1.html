@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector Exercise</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      input[type="text"] {
+        width: 70%;
+        padding: 10px;
+        margin: 50px 20px 30px 0;
+        font-family: 'Segoe UI Light', Tahoma, Verdana, sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        /* Style for text input */
+      }
+
+      input[type="submit"] {
+        background-color: #203260;
+        cursor: pointer;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 10px;
+        font-family: 'Segoe UI Light', Tahoma, Verdana, sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        color: rgb(242, 245, 250);
+        /* Style for submit input */
+      }
+
+      input[type="submit"]:hover {
+        color: rgb(65, 207, 253);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="header"><a href="../index.html#section2" section.active>CSS Selectors – Exercises</a></h1>
+    </header>
+
+    <main>
+      <div id="main">
+        <h1>Attribute Selector</h1>
+        <form action="#" method="POST">
+          <input type="text" placeholder="Text input">
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p id="footer">&copy;&nbsp;
+        <a href="https://careers.sirma.com/sirmaacademy.html" target="_blank">Sirma Academy &nbsp; 2024</a>
+      </p>
+    </footer>
+  </body>
+
+</html>
