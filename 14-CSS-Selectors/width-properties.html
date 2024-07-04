@@ -4,16 +4,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Selector Exercise</title>
+    <title>Width Properties Exercise</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-      /* div#main * { */
-      * {
-        font-family: 'Segoe UI Light', Tahoma, Verdana, sans-serif;
-        font-style: italic;
-        font-weight: 300;
-        font-size: 16px;
-        color: green;
+      .width-example {
+        margin: 1% 0;
+        border: thick double red;
+        padding: 25px;
+        height: 25vh;
+        width: 70vw;
+        min-width: 100px;
+        max-width: 800px;
+        background-color: darkturquoise;
+        text-align: left;
+        font-size: 24px;
+        color: white;
+        /* Set width, min-width, and max-width */
       }
     </style>
   </head>
@@ -25,8 +31,8 @@
 
     <main>
       <div id="main">
-        <h1>Universal Selector</h1>
-        <div>Content with default font and color.</div>
+        <h1>Width Properties</h1>
+        <div class="width-example">Resize the window to see me change!</div>
       </div>
     </main>
 

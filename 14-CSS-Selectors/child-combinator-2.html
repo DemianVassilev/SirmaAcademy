@@ -4,16 +4,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Selector Exercise</title>
+    <title>Child Combinator Exercise</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-      /* div#main * { */
-      * {
-        font-family: 'Segoe UI Light', Tahoma, Verdana, sans-serif;
-        font-style: italic;
-        font-weight: 300;
-        font-size: 16px;
+      .parent>p {
         color: green;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 24px;
+        /* Style for child combinator */
       }
     </style>
   </head>
@@ -25,8 +24,13 @@
 
     <main>
       <div id="main">
-        <h1>Universal Selector</h1>
-        <div>Content with default font and color.</div>
+        <h1>Child Combinator</h1>
+        <div class="parent">
+          <p>Direct child of .parent</p>
+          <div>
+            <p>Nested child of .parent</p>
+          </div>
+        </div>
       </div>
     </main>
 

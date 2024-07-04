@@ -4,16 +4,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Selector Exercise</title>
+    <title>Combinator Comparison Exercise</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-      /* div#main * { */
-      * {
-        font-family: 'Segoe UI Light', Tahoma, Verdana, sans-serif;
+      div p {
+        color: blue;
+        font-weight: 700;
         font-style: italic;
-        font-weight: 300;
         font-size: 16px;
+        /* Style for descendant combinator */
+      }
+
+      div>p {
         color: green;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 24px;
+        /* Style for child combinator */
       }
     </style>
   </head>
@@ -25,9 +32,13 @@
 
     <main>
       <div id="main">
-        <h1>Universal Selector</h1>
-        <div>Content with default font and color.</div>
-      </div>
+        <h1>Combinator Comparison</h1>
+        <div>
+          <p>Descendant</p>
+          <div>
+            <p>Child</p>
+          </div>
+        </div>
     </main>
 
     <footer>

@@ -4,15 +4,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Selector Exercise</title>
+    <title>Selector List Exercise</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-      /* div#main * { */
-      * {
-        font-family: 'Segoe UI Light', Tahoma, Verdana, sans-serif;
+      h2,
+      p,
+      div {
+        text-align: center;
+        font-weight: 700;
         font-style: italic;
-        font-weight: 300;
-        font-size: 16px;
+        font-size: 20px;
         color: green;
       }
     </style>
@@ -23,11 +24,13 @@
       <h1 id="header"><a href="../index.html#section2" section.active>CSS Selectors – Exercises</a></h1>
     </header>
 
-    <main>
-      <div id="main">
-        <h1>Universal Selector</h1>
-        <div>Content with default font and color.</div>
-      </div>
+    <main id="main-content">
+      <!-- <div id="main"> -->
+      <h1>Selector List</h1>
+      <h2>Heading</h2>
+      <p>Paragraph</p>
+      <div>Div content</div>
+      <!-- </div> -->
     </main>
 
     <footer>

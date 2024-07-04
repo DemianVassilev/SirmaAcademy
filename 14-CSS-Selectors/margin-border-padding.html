@@ -4,16 +4,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Selector Exercise</title>
+    <title>Margin, Border, Padding Exercise</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-      /* div#main * { */
-      * {
-        font-family: 'Segoe UI Light', Tahoma, Verdana, sans-serif;
-        font-style: italic;
-        font-weight: 300;
-        font-size: 16px;
-        color: green;
+      .box-model {
+        margin: 1% 0;
+        border: thick double red;
+        padding: 20%;
+        width: 59%;
+        height: 20%;
+        background-color: darkturquoise;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        /* margin, border, padding, and content area */
       }
     </style>
   </head>
@@ -25,8 +29,8 @@
 
     <main>
       <div id="main">
-        <h1>Universal Selector</h1>
-        <div>Content with default font and color.</div>
+        <h1>Margin, Border, Padding</h1>
+        <div class="box-model">Box Model Example</div>
       </div>
     </main>
 
