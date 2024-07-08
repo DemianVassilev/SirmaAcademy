@@ -215,6 +215,20 @@
   line-height: 1.6;
 }
 
+.background-color {
+  background: linear-gradient(to right, white, green, red);
+}
+
+.text-color {
+  color: darkorange;
+}
+
+.border-color {
+  padding: 10px;
+  border: 5px solid;
+  border-image: linear-gradient(to right, darkorange);
+}
+
 h2,
 h3,
 h4,
