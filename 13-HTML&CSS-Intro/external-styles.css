@@ -237,6 +237,28 @@ pre {
   border-image: linear-gradient(to right, darkorange);
 }
 
+.background-image-2 {
+  background-image: url('./cat-2.jpg');
+  background-attachment: fixed;
+  /* background-size: 100% 100%; */
+  /* background-size: cover; */
+  background-size: contain;
+  background-position: center;
+  padding: 10px;
+  color: white;
+}
+
+.background-image-3 {
+  background-image: url('./cat-3.jpg');
+  /* background-size: 100% 100%; */
+  /* background-size: cover; */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+  color: white;
+}
+
 h2,
 h3,
 h4,
