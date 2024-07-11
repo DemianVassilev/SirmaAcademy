@@ -65,19 +65,20 @@ div#main {
 
 nav button {
   cursor: pointer;
-  border-radius: 3px;
   border: 1px solid #203260;
-  padding: 3px;
-  margin-top: 13px;
-  margin-bottom: 20px;
+  padding: 5px;
+  margin: 13px 0 20px;
+  background-color: rgb(65, 207, 253);
+  transition: background-color 1s, color 1s;
   font-family: 'Segoe UI Light', Tahoma, Verdana, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
 }
 
 nav button:hover {
-  /* text-decoration: underline; */
-  color: darkmagenta;
+  background-color: #203260;
+  color: rgb(65, 207, 253);
 }
 
 section {
@@ -109,14 +110,17 @@ ol.li-space {
   margin-bottom: 30px;
 }
 
+ol.li-space li {
+  margin-bottom: 3px;
+}
+
 ul.li-space {
   list-style-type: "→ ";
 }
 
-ul.li-space li,
-ol.li-space li {
-  margin-bottom: 3px;
+ul.li-space li {
   margin-left: -1.3em;
+  margin-bottom: 3px;
 }
 
 p#footer {

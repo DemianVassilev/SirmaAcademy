@@ -259,6 +259,48 @@ pre {
   color: white;
 }
 
+button {
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+  margin: 30px 0 20px;
+  background-color: rgb(65, 207, 253);
+  transition: background-color 1.5s, color 1.5s;
+  font-family: 'Segoe UI Light', Tahoma, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(242, 245, 250);
+}
+
+button:hover {
+  background-color: #203260;
+  font-weight: 700;
+  color: rgb(65, 207, 253);
+}
+
+a.ext:link {
+  margin-left: 12px;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 18px;
+  color: #203260;
+}
+
+a.ext:hover {
+  background-color: rgb(65, 207, 253);
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(242, 245, 250);
+}
+
+.intro::first-line {
+  font-weight: bold;
+  color: darkorange;
+  text-transform: uppercase;
+}
+
 h2,
 h3,
 h4,
