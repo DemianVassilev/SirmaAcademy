@@ -861,11 +861,16 @@ footer .brand-icons {
 
 footer a {
   text-decoration: none;
-  color: rgb(65, 207, 253);
+  color: rgba(255, 255, 255, 0.502);
 }
 
 footer a:hover {
   text-decoration: underline;
+  color: rgb(65, 207, 253);
+}
+
+footer a:visited {
+  text-decoration: none;
   color: rgb(65, 207, 253);
 }
 
