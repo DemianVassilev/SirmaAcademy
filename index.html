@@ -11,18 +11,28 @@
   <body>
     <header>
       <!-- <h1 id="header">Sirma Academy Professional Program &nbsp;–&nbsp; Front-End with JavaScript</h1> -->
-      <h1 id="header">Front-End with JavaScript</h1>
+      <!-- <h1 id="header">Front-End with JavaScript</h1> -->
+      <!-- <h1 id="header">JS Track Front-End Development</h1> -->
+      <h1 id="header">JavaScript Front-End Development</h1>
     </header>
 
     <main>
       <div id="main">
         <nav>
-          <button onclick="showSection('section1'); return false;">HTML & CSS Intro</button>
-          &nbsp;
-          <button onclick="showSection('section2'); return false;">CSS Selectors</button>
-          &nbsp;
-          <button onclick="showSection('section3'); return false;">Media Queries</button>
+          <button onclick="showSection('section1'); return false;">
+            HTML & CSS Intro
+          </button>
+          <button onclick="showSection('section2'); return false;">
+            CSS Selectors
+          </button>
+          <button onclick="showSection('section3'); return false;">
+            Media Queries
+          </button>
+          <button onclick="showSection('section4'); return false;">
+            Mid Exam
+          </button>
         </nav>
+
         <h2 id="section1">
           <a class="ex" href="#section1" onclick="toggleSection('section1'); return false;">HTML & CSS Intro – Tasks</a>
         </h2>
@@ -51,6 +61,8 @@
             </li>
             <li>
               <a class="ex" href="13-HTML&CSS-Intro/text-formatting.html">Text Formatting</a>
+            </li>
+
             <li>
               <a class="ex" href="13-HTML&CSS-Intro/inline-elements.html">Inline Elements</a>
             </li>
@@ -85,8 +97,7 @@
               <a class="ex" href="13-HTML&CSS-Intro/font-size.html">CSS Typography: Font Size</a>
             </li>
             <li>
-              <a class="ex" href="13-HTML&CSS-Intro/font-style-weight.html">CSS Typography: Font Style and
-                Weight</a>
+              <a class="ex" href="13-HTML&CSS-Intro/font-style-weight.html">CSS Typography: Font Style and Weight</a>
             </li>
             <li>
               <a class="ex" href="13-HTML&CSS-Intro/text-alignment.html">CSS Typography: Text Alignment</a>
@@ -151,7 +162,6 @@
                 <li>
                   <a class="ex" href="14-CSS-Selectors/class-selector-3.html">to apply a common style to multiple
                     elements</a>
-
                 </li>
                 <li>
                   <a class="ex" href="14-CSS-Selectors/class-selector-4.html">to change the background color of
@@ -198,8 +208,7 @@
                   <a class="ex" href="14-CSS-Selectors/attribute-selector-1.html">to style input elements</a>
                 </li>
                 <li>
-                  <a class="ex" href="14-CSS-Selectors/attribute-selector-2.html">to change the text color of
-                    links</a>
+                  <a class="ex" href="14-CSS-Selectors/attribute-selector-2.html">to change the text color of links</a>
                 </li>
               </ul>
             </li>
@@ -233,8 +242,8 @@
                     element</a>
                 </li>
                 <li>
-                  <a class="ex" href="14-CSS-Selectors/child-combinator-2.html">to style direct children of a
-                    specific class</a>
+                  <a class="ex" href="14-CSS-Selectors/child-combinator-2.html">to style direct children of a specific
+                    class</a>
                 </li>
               </ul>
             </li>
@@ -242,12 +251,12 @@
               Box Model
               <ul class="li-space">
                 <li>
-                  <a class="ex" href="14-CSS-Selectors/box-model-1.html">by setting margin, border, padding, and
-                    content area</a>
+                  <a class="ex" href="14-CSS-Selectors/box-model-1.html">by setting margin, border, padding, and content
+                    area</a>
                 </li>
                 <li>
-                  <a class="ex" href="14-CSS-Selectors/box-model-2.html">the total width with padding,
-                    border, and margin</a>
+                  <a class="ex" href="14-CSS-Selectors/box-model-2.html">the total width with padding, border, and
+                    margin</a>
                 </li>
               </ul>
             </li>
@@ -265,6 +274,7 @@
             </li>
           </ol>
         </section>
+
         <h2 id="section3">
           <a class="ex" href="#section3" onclick="toggleSection('section3'); return false;">Media Queries – Tasks</a>
         </h2>
@@ -278,27 +288,47 @@
             </li>
           </ol>
         </section>
+
+        <h2 id="section4">
+          <a class="ex" href="#section4" onclick="toggleSection('section4'); return false;">HTM & CSS – Exam</a>
+        </h2>
+        <section class="active">
+          <ol class="li-space">
+            <li>
+              <a class="ex" href="HTM&CSS-Exam/index.html">Web Design from PSD-file – desktop and mobile</a>
+            </li>
+          </ol>
+        </section>
+
+        <div class="btn-right">
+          <a class="btn-top" href="index.html">&DoubleUpDownArrow;</a>
+        </div>
+
       </div>
     </main>
 
     <footer>
-      <p id="footer">&copy;&nbsp;
-        <a href="https://careers.sirma.com/sirmaacademy.html" target="_blank">Sirma Academy &nbsp; 2024</a>
+      <p id="footer">&copy; 2024 &nbsp;
+        <a href="https://careers.sirma.com/js-track.html" target="_blank">SirmaCareers</a>
       </p>
     </footer>
 
     <script>
       function showSection(sectionId) {
-        const sections = document.querySelectorAll('section');
-        sections.forEach(section => section.classList.remove('active'));
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section) => section.classList.remove("active"));
 
-        const selectedSection = document.querySelector(`#${sectionId} + section`);
-        selectedSection.classList.add('active');
+        const selectedSection = document.querySelector(
+          `#${sectionId} + section`
+        );
+        selectedSection.classList.add("active");
       }
 
       function toggleSection(sectionId) {
-        const selectedSection = document.querySelector(`#${sectionId} + section`);
-        const isActive = selectedSection.classList.toggle('active');
+        const selectedSection = document.querySelector(
+          `#${sectionId} + section`
+        );
+        const isActive = selectedSection.classList.toggle("active");
 
         if (isActive) {
           history.pushState({ sectionId }, "", `#${sectionId}`);
@@ -307,23 +337,26 @@
         }
       }
 
-      window.addEventListener('popstate', function (event) {
+      window.addEventListener("popstate", function (event) {
         if (event.state && event.state.sectionId) {
           showSection(event.state.sectionId);
         } else {
-          const sections = document.querySelectorAll('section');
-          sections.forEach(section => section.classList.remove('active'));
+          const sections = document.querySelectorAll("section");
+          sections.forEach((section) => section.classList.remove("active"));
         }
       });
 
-      document.addEventListener('DOMContentLoaded', () => {
-        const initialSection = location.hash ? location.hash.substring(1) : null;
+      document.addEventListener("DOMContentLoaded", () => {
+        const initialSection = location.hash
+          ? location.hash.substring(1)
+          : null;
         if (initialSection) {
           showSection(initialSection);
         } else {
-          document.querySelector('section').classList.add('active');
+          document.querySelector("section").classList.add("active");
         }
       });
     </script>
   </body>
+
 </html>
