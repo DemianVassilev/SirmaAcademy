@@ -66,8 +66,8 @@ div#main {
 nav button {
   cursor: pointer;
   border: 1px solid #203260;
-  padding: 5px;
-  margin: 13px 0 20px;
+  padding: 4px 2px;
+  margin: 13px 5px 20px 0;
   background-color: rgb(65, 207, 253);
   transition: background-color 1s, color 1s;
   font-family: "Segoe UI Light", Tahoma, Verdana, sans-serif;
