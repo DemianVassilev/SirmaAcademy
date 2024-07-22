@@ -859,6 +859,16 @@ footer .brand-icons {
   color: #cccccc;
 }
 
+footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.502);
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: rgb(65, 207, 253);
+}
+
 /* Responsive Styles */
 @media (max-width: 720px) {
   .container {
