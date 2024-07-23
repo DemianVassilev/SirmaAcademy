@@ -10,9 +10,7 @@
 
   <body>
     <header>
-      <!-- <h1 id="header">Sirma Academy Professional Program &nbsp;–&nbsp; Front-End with JavaScript</h1> -->
       <!-- <h1 id="header">Front-End with JavaScript</h1> -->
-      <!-- <h1 id="header">JS Track Front-End Development</h1> -->
       <!-- <h1 id="header">JavaScript Front-End Development</h1> -->
       <h1 id="header">Development with JavaScript</h1>
     </header>
@@ -317,25 +315,21 @@
 
     <script>
       function showSection(sectionId) {
-        const sections = document.querySelectorAll("section");
-        sections.forEach((section) => section.classList.remove("active"));
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section) => section.classList.remove('active'));
 
-        const selectedSection = document.querySelector(
-          `#${sectionId} + section`
-        );
-        selectedSection.classList.add("active");
+        const selectedSection = document.querySelector(`#${sectionId} + section`);
+        selectedSection.classList.add('active');
       }
 
       function toggleSection(sectionId) {
-        const selectedSection = document.querySelector(
-          `#${sectionId} + section`
-        );
-        const isActive = selectedSection.classList.toggle("active");
+        const selectedSection = document.querySelector(`#${sectionId} + section`);
+        const isActive = selectedSection.classList.toggle('active');
 
         if (isActive) {
-          history.pushState({ sectionId }, "", `#${sectionId}`);
+          history.pushState({ sectionId }, '', `#${sectionId}`);
         } else {
-          history.pushState({}, "", `#`);
+          history.pushState({}, '', `#`);
         }
       }
 
@@ -343,19 +337,17 @@
         if (event.state && event.state.sectionId) {
           showSection(event.state.sectionId);
         } else {
-          const sections = document.querySelectorAll("section");
-          sections.forEach((section) => section.classList.remove("active"));
+          const sections = document.querySelectorAll('section');
+          sections.forEach((section) => section.classList.remove('active'));
         }
       });
 
-      document.addEventListener("DOMContentLoaded", () => {
-        const initialSection = location.hash
-          ? location.hash.substring(1)
-          : null;
+      document.addEventListener('DOMContentLoaded', () => {
+        const initialSection = location.hash ? location.hash.substring(1) : null;
         if (initialSection) {
           showSection(initialSection);
         } else {
-          document.querySelector("section").classList.add("active");
+          document.querySelector('section').classList.add('active');
         }
       });
     </script>
