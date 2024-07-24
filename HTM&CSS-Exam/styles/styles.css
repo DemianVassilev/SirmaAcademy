@@ -35,18 +35,6 @@ header {
   gap: 10px;
 }
 
-.container-brand {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: space-between;
-  width: 95%;
-  max-width: 1280px;
-  margin: 0 auto;
-  gap: 10px;
-}
-
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -191,18 +179,23 @@ header nav ul li a {
 }
 
 #brand {
-  display: flex;
   position: relative;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   padding: 20px 0;
-  box-shadow: 0px 1px 1.5px rgba(0, 0, 0, 0.38);
 }
 
 #brand .brand-content {
-  max-width: 365px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  max-width: 100%;
 }
 
 #brand .brand-content h2 {
   font-family: "Open Sans";
+  text-align: left;
   font-weight: 700;
   font-size: 20px;
   color: #333333;
@@ -216,17 +209,36 @@ header nav ul li a {
   color: #86878b;
 }
 
+#brand .brand-text {
+  width: 35%;
+}
+
 #brand .brand-icons {
+  cursor: pointer;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   align-content: space-between;
-  width: 700px;
   font-family: 'Font Awesome';
+  text-align: center;
   font-size: 48px;
+  font-weight: 300;
   color: silver;
-  cursor: pointer;
+  width: 55%;
+}
+
+#brand a {
+  text-decoration: none;
+  color: silver;
+}
+
+#brand a:hover {
+  color: rgba(255, 255, 255, 0.502);
+}
+
+#brand a:visited {
+  text-decoration: none;
+  color: #cccccc;
 }
 
 #feature-1 {
@@ -402,6 +414,11 @@ header nav ul li a {
   place-items: center;
 }
 
+#feature-2 img {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.5), 0 32px 96px 0 rgba(0, 0, 0, 0.5);
+  max-width: 50%;
+}
+
 #feature-3 {
   background-color: whitesmoke;
   padding: 110px 0 140px;
@@ -445,6 +462,7 @@ header nav ul li a {
 }
 
 #feature-3 img {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.5), 0 32px 96px 0 rgba(0, 0, 0, 0.5);
   max-width: 50%;
 }
 
@@ -609,11 +627,10 @@ header nav ul li a {
 #custom {
   background: url('../images/u25_state0.png') no-repeat center center/cover;
   background-color: black;
-  padding: 0.50px 0;
+  padding: 60px 0 60px;
 }
 
 #custom .custom-content {
-  max-width: 100%;
   text-align: center
 }
 
@@ -623,7 +640,6 @@ header nav ul li a {
   font-weight: 400;
   font-size: 36px;
   color: white;
-  margin: 60px 0 25px;
 }
 
 #custom .custom-content p {
@@ -647,7 +663,6 @@ header nav ul li a {
   font-weight: 500;
   font-size: 15px;
   color: white;
-  margin: 0 0 60px;
 }
 
 #custom .btn-down:hover {
@@ -798,13 +813,12 @@ footer a {
 }
 
 footer a:hover {
-  text-decoration: underline;
   color: rgb(65, 207, 253);
 }
 
 footer a:visited {
   text-decoration: none;
-  color: rgb(65, 207, 253);
+  color: #cccccc;
 }
 
 
@@ -820,11 +834,18 @@ footer a:visited {
     margin-top: 20px;
   }
 
+  #brand .brand-content,
+  #brand .brand-icons,
+  #brand .brand-text {
+    width: 100%;
+  }
+
   #feature-1 .feature-1-content,
   #feature-2 .feature-2-content {
     gap: 100px;
   }
 
+  #brand .brand-content,
   #feature-1 .feature-1-content,
   #feature-1 .feature-1-content,
   #feature-2 .feature-2-content,
@@ -832,6 +853,7 @@ footer a:visited {
     flex-wrap: wrap;
   }
 
+  #brand .brand-content,
   #feature-1 .feature-1-content,
   #feature-2 .feature-2-content,
   #feature-3 .feature-3-content,
