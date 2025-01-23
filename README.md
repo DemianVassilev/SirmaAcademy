@@ -4,7 +4,7 @@
 
 [Live Demo](https://DemianVassilev.github.io/SirmaAcademy)
 
-![Screenshot 2025-01-23 at 13-21-15 Tasks](https://github.com/user-attachments/assets/83836668-b269-4df3-96e8-ac7b773bc975)
+![Screenshot 2025-01-23 at 14-46-36 Tasks](https://github.com/user-attachments/assets/2fb9c4c6-de47-4b49-9dfb-a5a2fecc5dad)
 
 
 [HTML & CSS – Exam: Web Design from PSD-file – desktop and mobile](https://demianvassilev.github.io/SirmaAcademy/HTM&CSS-Exam/index.html)
