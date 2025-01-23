@@ -1,8 +1,8 @@
 
-# JavaScript Front-End Development 
+# JavaScript Track Front-End Development 
 
 
-[Live Demo](https://DemianVassilev.github.io/SirmaAcademy)
+[Tasks](https://DemianVassilev.github.io/SirmaAcademy)
 
 ![Screenshot 2025-01-23 at 14-46-36 Tasks](https://github.com/user-attachments/assets/2fb9c4c6-de47-4b49-9dfb-a5a2fecc5dad)
 
